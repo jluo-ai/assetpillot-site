@@ -4,14 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AssetPilot LLC — AI Architecture & Engineering</title>
+<title>AssetPilot LLC | AI Architecture & Engineering</title>
 
 <meta name="description"
-      content="AssetPilot LLC focuses on transforming established enterprise applications into reliable AI-augmented systems.">
+      content="AssetPilot LLC provides AI architecture and engineering focused on transforming established enterprise applications into reliable AI-augmented systems.">
 
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 <style>
+/* -------------------------------------------------------
+   ASSETPILOT
+------------------------------------------------------- */
+
 :root {
   --ink: #20252b;
   --muted: #68717a;
@@ -55,10 +59,11 @@ a {
   margin: auto;
 }
 
-/* HEADER */
+
+/* ---------------- HEADER ---------------- */
 
 header {
-  height: 64px;
+  height: 70px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -72,48 +77,39 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 14px;
+  gap: 11px;
+  font-size: 15px;
   font-weight: 650;
   letter-spacing: -0.01em;
 }
 
 .logo-symbol {
-  width: 27px;
-  height: 27px;
-  border: 1.4px solid var(--ink);
-  border-radius: 4px;
+  width: 29px;
+  height: 29px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
   position: relative;
-}
-
-.logo-symbol::before {
-  content: "";
-  position: absolute;
-  width: 9px;
-  height: 1.5px;
-  background: var(--blue);
-  top: 8px;
-  left: 8px;
 }
 
 .logo-symbol::after {
   content: "";
   position: absolute;
-  width: 1.5px;
+  width: 9px;
   height: 9px;
   background: var(--blue);
+  border-radius: 50%;
   top: 8px;
-  left: 12px;
+  left: 8px;
 }
 
 nav {
   display: flex;
-  gap: 27px;
+  gap: 28px;
 }
 
 nav a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--muted);
 }
 
@@ -121,10 +117,11 @@ nav a:hover {
   color: var(--ink);
 }
 
-/* HERO */
+
+/* ---------------- HERO ---------------- */
 
 .hero {
-  padding: 70px 0 64px;
+  padding: 78px 0 70px;
 }
 
 .hero-grid {
@@ -135,9 +132,9 @@ nav a:hover {
 }
 
 .kicker {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   color: var(--blue);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: .13em;
   text-transform: uppercase;
@@ -145,9 +142,9 @@ nav a:hover {
 
 h1 {
   margin: 0;
-  max-width: 610px;
-  font-size: clamp(32px, 4.2vw, 52px);
-  line-height: 1.04;
+  max-width: 600px;
+  font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.02;
   letter-spacing: -.045em;
   font-weight: 520;
 }
@@ -157,30 +154,34 @@ h1 strong {
   color: var(--blue);
 }
 
+.hero-copy {
+  max-width: 535px;
+}
+
 .hero-description {
-  margin: 24px 0 0;
-  max-width: 525px;
+  margin: 27px 0 0;
+  max-width: 500px;
   color: #525b63;
   font-size: 15px;
-  line-height: 1.62;
+  line-height: 1.6;
 }
 
 .hero-sub {
-  margin: 11px 0 0;
-  max-width: 500px;
+  margin: 12px 0 0;
+  max-width: 490px;
   color: var(--muted);
   font-size: 12px;
 }
 
 .hero-link {
   display: inline-flex;
-  margin-top: 25px;
+  margin-top: 27px;
   align-items: center;
-  gap: 9px;
+  gap: 10px;
   text-decoration: none;
   border-bottom: 1px solid #969b9e;
   padding-bottom: 3px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .hero-link:hover {
@@ -188,11 +189,12 @@ h1 strong {
   color: var(--blue);
 }
 
-/* ARCHITECTURE VISUAL */
+
+/* ---------------- ARCHITECTURE VISUAL ---------------- */
 
 .system {
   position: relative;
-  min-height: 385px;
+  min-height: 410px;
   border-left: 1px solid var(--line);
   border-right: 1px solid var(--line);
   padding: 22px 36px;
@@ -216,23 +218,25 @@ h1 strong {
 }
 
 .system-label {
+  text-align: center;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   color: #8b9297;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: .08em;
 }
 
 .flow {
   position: relative;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 28px;
 }
 
 .node {
+  text-align: center;
   position: relative;
   width: 78%;
   margin: 0 auto;
-  padding: 11px 14px;
+  padding: 13px 16px;
   background: rgba(255,255,255,.44);
   border: 1px solid #cfd2d2;
 }
@@ -240,13 +244,13 @@ h1 strong {
 .node small {
   display: block;
   margin-bottom: 3px;
-  font-size: 8px;
+  font-size: 9px;
   letter-spacing: .11em;
   color: #91979a;
 }
 
 .node strong {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 550;
 }
 
@@ -261,7 +265,7 @@ h1 strong {
 
 .flow-line {
   position: relative;
-  height: 27px;
+  height: 31px;
   width: 1px;
   background: #aeb2b2;
   margin: 0 auto;
@@ -280,18 +284,19 @@ h1 strong {
 }
 
 .system-note {
-  margin: 23px auto 0;
+  margin: 27px auto 0;
   max-width: 78%;
   color: #72797e;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
-/* SHARED SECTIONS */
+
+/* ---------------- SECTION SHARED ---------------- */
 
 .section {
   border-top: 1px solid var(--line);
-  padding: 56px 0;
+  padding: 61px 0;
 }
 
 .section-grid {
@@ -301,7 +306,7 @@ h1 strong {
 }
 
 .section-label {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: .12em;
   color: var(--blue);
@@ -312,23 +317,24 @@ h2 {
   margin: 0;
   max-width: 650px;
   font-size: 25px;
-  line-height: 1.18;
+  line-height: 1.16;
   letter-spacing: -.025em;
   font-weight: 520;
 }
 
-/* ENGINEERING FOCUS */
+
+/* ---------------- CAPABILITIES ---------------- */
 
 .capabilities {
-  margin-top: 31px;
+  margin-top: 35px;
   border-top: 1px solid var(--line);
 }
 
 .cap-row {
   display: grid;
-  grid-template-columns: 40px 205px 1fr;
+  grid-template-columns: 42px 220px 1fr;
   gap: 18px;
-  padding: 17px 0;
+  padding: 19px 0;
   border-bottom: 1px solid var(--line);
   align-items: start;
 }
@@ -336,7 +342,7 @@ h2 {
 .cap-index {
   font-family: ui-monospace, monospace;
   color: #9ba0a3;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .cap-title {
@@ -350,11 +356,12 @@ h2 {
   font-size: 12px;
 }
 
-/* LAB */
+
+/* ---------------- LAB ---------------- */
 
 .lab-block {
-  margin-top: 29px;
-  padding: 27px 31px;
+  margin-top: 32px;
+  padding: 30px 34px;
   background: #22282e;
   color: white;
 }
@@ -364,17 +371,17 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
 }
 
 .lab-name {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 550;
 }
 
 .lab-status {
   font-family: ui-monospace, monospace;
-  font-size: 9px;
+  font-size: 10px;
   color: #9da9b4;
 }
 
@@ -393,29 +400,31 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
-  margin-top: 24px;
+  margin-top: 27px;
 }
 
 .tag {
-  padding: 5px 8px;
+  padding: 5px 9px;
   border: 1px solid #4a5259;
-  font-size: 9px;
+  font-size: 10px;
   color: #aeb9c2;
 }
 
-/* ABOUT */
+
+/* ---------------- ABOUT ---------------- */
 
 .about-text {
   max-width: 650px;
 }
 
 .about-text p {
-  margin: 0 0 14px;
+  margin: 0 0 15px;
   color: #525b63;
   font-size: 13px;
 }
 
-/* CONTACT */
+
+/* ---------------- CONTACT ---------------- */
 
 .contact {
   background: var(--blue);
@@ -438,37 +447,46 @@ h2 {
 
 .contact p {
   max-width: 500px;
-  margin: 15px 0 22px;
+  margin: 17px 0 24px;
   color: #dbe7f2;
-  font-size: 12px;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  align-items: center;
 }
 
 .contact-link {
   display: inline-block;
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   text-decoration: none;
   border-bottom: 1px solid rgba(255,255,255,.65);
   padding-bottom: 3px;
 }
 
-/* FOOTER */
+
+/* ---------------- FOOTER ---------------- */
 
 footer {
   border-top: 1px solid var(--line);
-  padding: 20px 0;
+  padding: 22px 0;
 }
 
 .footer-inner {
   display: flex;
   justify-content: space-between;
   color: #858b8f;
-  font-size: 10px;
+  font-size: 11px;
 }
 
-/* MOBILE */
+
+/* ---------------- MOBILE ---------------- */
 
 @media (max-width: 760px) {
+
   .wrap {
     width: min(calc(100% - 30px), var(--max));
   }
@@ -478,7 +496,7 @@ footer {
   }
 
   .hero {
-    padding: 48px 0;
+    padding: 52px 0;
   }
 
   .hero-grid,
@@ -486,10 +504,6 @@ footer {
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 30px;
-  }
-
-  h1 {
-    font-size: 38px;
   }
 
   .system {
@@ -512,6 +526,7 @@ footer {
 </style>
 </head>
 
+
 <body>
 
 <header>
@@ -524,7 +539,7 @@ footer {
 
     <nav>
       <a href="#work">Engineering Focus</a>
-      <a href="#lab">Engineering Lab</a>
+      <a href="#lab">Our Approach</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -532,88 +547,95 @@ footer {
   </div>
 </header>
 
+
+
 <main>
+
+<!-- HERO -->
 
 <section class="hero">
   <div class="wrap hero-grid">
 
-    <div>
+    <div class="hero-copy">
 
       <div class="kicker">
         AI Architecture & Engineering
       </div>
 
       <h1>
-        Transforming enterprise software
-        into <strong>intelligent systems.</strong>
+        Reliable AI systems,<br>
+        <strong>engineered for real-world use.</strong>
       </h1>
 
       <p class="hero-description">
-        AssetPilot focuses on transforming established enterprise
-        applications into AI-augmented systems—adding reasoning,
-        contextual intelligence, tools, and agentic capabilities
-        while preserving the deterministic logic and controls
-        those systems depend on.
+        AssetPilot LLC provides AI architecture and engineering
+        for businesses exploring practical uses of Generative AI
+        and agentic systems. A key focus is evolving established
+        enterprise applications into AI-augmented systems with
+        reasoning, decision support, and more intelligent interaction.
       </p>
 
       <p class="hero-sub">
-        The goal is not to replace proven enterprise systems,
-        but to extend them with more intelligent analysis,
-        decision support, interaction, and automation.
+        Focused on AI strategy, context engineering, enterprise integration, evaluation, governance, and production readiness, while preserving the deterministic logic and controls existing systems depend on.
       </p>
 
       <a href="#work" class="hero-link">
-        Explore the engineering approach →
+        Explore our engineering focus →
       </a>
 
     </div>
 
+
     <div class="system">
 
       <div class="system-label">
-        SYSTEM / 01
+        Agentic System Architecture
       </div>
 
       <div class="flow">
 
         <div class="node">
-          <small>ENTERPRISE CONTEXT</small>
-          <strong>Knowledge · Data · Application State</strong>
+          <small>CONTEXT</small>
+          <strong>Enterprise Knowledge</strong>
         </div>
 
         <div class="flow-line"></div>
 
         <div class="node ai">
-          <small>INTELLIGENCE LAYER</small>
-          <strong>Reasoning · RAG · Agents · Tools</strong>
+          <small>PROBABILISTIC LAYER</small>
+          <strong>LLM · RAG · Agents</strong>
+        </div>
+
+        <div class="flow-line"></div>
+
+        <div class="node ai">
+          <small>TRUST LAYER</small>
+          <strong>Validation · Evaluation · Guardrails</strong>
         </div>
 
         <div class="flow-line"></div>
 
         <div class="node">
-          <small>TRUST & CONTROL</small>
-          <strong>Validation · Evaluation · Guardrails · HITL</strong>
-        </div>
-
-        <div class="flow-line"></div>
-
-        <div class="node">
-          <small>DETERMINISTIC CORE</small>
-          <strong>Business Logic · APIs · Services · Workflows</strong>
+          <small>DETERMINISTIC SYSTEM</small>
+          <strong>APIs · Data · Tools · Services</strong>
         </div>
 
       </div>
 
       <div class="system-note">
-        AI augmentation works best when reasoning is introduced
-        without weakening the deterministic behavior,
-        controls, and reliability of the underlying system.
+        AI behavior becomes more useful when its boundaries,
+        context, and interaction with deterministic systems
+        are deliberately engineered.
       </div>
 
     </div>
 
   </div>
 </section>
+
+
+
+<!-- WORK -->
 
 <section class="section" id="work">
 
@@ -626,69 +648,75 @@ footer {
     <div>
 
       <h2>
-        Extending enterprise applications
-        with controlled intelligence.
+        The engineering around the model
+        matters as much as the model itself.
       </h2>
+
 
       <div class="capabilities">
 
         <div class="cap-row">
+
           <div class="cap-index">01</div>
 
           <div class="cap-title">
-            AI-Augmented Applications
+            AI Strategy & Architecture
           </div>
 
           <div class="cap-text">
-            Introducing reasoning, intelligent analysis,
-            decision support, and adaptive interaction
-            into established enterprise systems.
+            Aligning use cases, technical decisions, and adoption roadmaps with business goals, including the evolution of existing applications into AI-augmented systems.
           </div>
+
         </div>
 
+
         <div class="cap-row">
+
           <div class="cap-index">02</div>
 
           <div class="cap-title">
-            Generative AI & RAG
+            Context Engineering & RAG
           </div>
 
           <div class="cap-text">
-            Grounded architectures combining language models,
-            enterprise knowledge, retrieval,
-            and deterministic application logic.
+            Supplying relevant knowledge, instructions, and memory for each task.
           </div>
+
         </div>
 
+
         <div class="cap-row">
+
           <div class="cap-index">03</div>
 
           <div class="cap-title">
-            Context & Agent Engineering
+            Agentic AI & Harness Engineering
           </div>
 
           <div class="cap-text">
-            Context boundaries, tools, execution loops,
-            memory strategies, MCP,
-            and multi-agent workflows.
+            Coordinating tools, execution loops, and state, with defined retry and stopping conditions.
           </div>
+
         </div>
 
+
         <div class="cap-row">
+
           <div class="cap-index">04</div>
 
           <div class="cap-title">
-            Evaluation & Controls
+            Governance, Guardrails & Evaluation
           </div>
 
           <div class="cap-text">
-            Validation pipelines, grounding checks,
-            evaluation, guardrails, governance,
-            and human oversight.
+            Enforcing policies and permissions, measuring quality, and enabling human oversight.
           </div>
+
         </div>
 
+
         <div class="cap-row">
+
           <div class="cap-index">05</div>
 
           <div class="cap-title">
@@ -696,10 +724,9 @@ footer {
           </div>
 
           <div class="cap-text">
-            Connecting intelligent components with APIs,
-            enterprise services, data platforms,
-            tools, and existing applications.
+            Connecting agents to existing APIs, data platforms, and operational workflows.
           </div>
+
         </div>
 
       </div>
@@ -707,15 +734,21 @@ footer {
     </div>
 
   </div>
+
 </section>
+
+
+
+<!-- LAB -->
 
 <section class="section" id="lab">
 
   <div class="wrap section-grid">
 
     <div class="section-label">
-      Current Focus
+      Our Approach
     </div>
+
 
     <div>
 
@@ -723,9 +756,14 @@ footer {
         Agent Engineering Lab
       </h2>
 
+      <p>
+        We continually build, test, and refine agentic AI patterns, with a focus on reliability, governance, and practical enterprise use.
+      </p>
+
       <div class="lab-block">
 
         <div class="lab-top">
+
           <div class="lab-name">
             AEL / AssetPilot
           </div>
@@ -733,7 +771,9 @@ footer {
           <div class="lab-status">
             ACTIVE ENGINEERING
           </div>
+
         </div>
+
 
         <div class="principle">
           “Keep deterministic application logic separate from
@@ -741,13 +781,14 @@ footer {
           the boundary between them.”
         </div>
 
+
         <div class="tags">
-          <div class="tag">AI AUGMENTATION</div>
           <div class="tag">CONTEXT ENGINEERING</div>
           <div class="tag">AGENTIC RAG</div>
           <div class="tag">TOOL USE</div>
           <div class="tag">MCP</div>
           <div class="tag">MULTI-AGENT</div>
+          <div class="tag">HARNESS ENGINEERING</div>
           <div class="tag">EVALUATION</div>
           <div class="tag">GUARDRAILS</div>
           <div class="tag">GOVERNANCE</div>
@@ -758,7 +799,12 @@ footer {
     </div>
 
   </div>
+
 </section>
+
+
+
+<!-- ABOUT -->
 
 <section class="section" id="about">
 
@@ -768,6 +814,7 @@ footer {
       About
     </div>
 
+
     <div class="about-text">
 
       <h2>
@@ -775,23 +822,23 @@ footer {
         applied to modern AI.
       </h2>
 
-      <p style="margin-top:24px;">
-        AssetPilot LLC is an AI architecture and engineering
-        practice focused on the design and evaluation
-        of reliable enterprise AI systems.
+      <p style="margin-top:26px;">
+        AssetPilot LLC is an AI architecture and engineering practice focused on the design and evaluation of reliable enterprise AI systems.
       </p>
 
       <p>
-        Our work combines Generative AI and agent engineering
-        with deep experience in mission-critical enterprise systems,
-        distributed services, enterprise integration, Java, Python,
-        microservices, Kubernetes, and production platforms.
+        Our work combines Generative AI and Agentic AI engineering with deep experience in mission-critical enterprise systems, distributed services, enterprise integration, Java, Python, microservices, Kubernetes, and production platforms.
       </p>
 
     </div>
 
   </div>
+
 </section>
+
+
+
+<!-- CONTACT -->
 
 <section class="section contact" id="contact">
 
@@ -801,6 +848,7 @@ footer {
       Contact
     </div>
 
+
     <div>
 
       <h2>
@@ -808,32 +856,50 @@ footer {
       </h2>
 
       <p>
-        Interested in AI architecture, agent engineering,
-        enterprise modernization, or related collaboration?
+        Connect to discuss AI strategy, architecture, Agentic AI engineering, and enterprise collaboration.
       </p>
 
+      <div class="contact-actions">
       <a
         class="contact-link"
         href="https://www.linkedin.com/in/jane-luo-ai-eng"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Connect on LinkedIn →
+        Connect on LinkedIn
       </a>
+      <a class="contact-link" href="mailto:hello@assetpilotllc.com">
+        Email us
+      </a>
+      </div>
 
     </div>
 
   </div>
+
 </section>
+
 
 </main>
 
+
+
 <footer>
+
   <div class="wrap footer-inner">
-    <div>© 2026 AssetPilot LLC</div>
-    <div>Chicago Area · AI Architecture & Engineering</div>
+
+    <div>
+      © 2026 AssetPilot LLC
+    </div>
+
+    <div>
+      Chicago Area · AI Architecture & Engineering
+    </div>
+
   </div>
+
 </footer>
 
 </body>
 </html>
+
